@@ -2,6 +2,8 @@
 
 This is a Scoop-compatible bucket for installing the updated the [Determined AI](https://github.com/determined-ai/determined) CLI client on Windows.
 
+![output](https://user-images.githubusercontent.com/33820650/186774124-61565599-56b6-4dfd-98c7-504c89cba4fc.gif)
+
 ## Installation
 
 Install [Scoop](https://scoop.sh/) in PowerShell, if you have not already done so:
