@@ -44,7 +44,11 @@ The Determined CLI is [not eligible for inclusion](https://github.com/ScoopInsta
 
 ## determined.exe shim
 
-The Determined CLI is installed by first installing Python as a dependency in Scoop, then via pip. However, Scoop expects to download something, not just run a script. `dethelper.nim`, compiled to `determined.exe`, is a shim binary for Scoop to download, and is published as a release here in this repository. This gives Scoop something to download. Any command line arguments passed to `determined` will be passed through to `det`.
+This manifest first installs the official Python package as a dependency, then installs the Determined CLI via pip. However, Scoop expects to download *something*, not just run a script. So `dethelper.nim` is compiled to `determined.exe` as a binary for Scoop to download. It is published as a release here in this repository. It is a simple shim and any command line arguments passed to `determined` will be passed through to `det`.
+
+## Help
+
+Join the [Determined AI Commmunity Slack](https://join.slack.com/t/determined-community/shared_invite/zt-1f4hj60z5-JMHb~wSr2xksLZVBN61g_Q).
 
 ## License
 
