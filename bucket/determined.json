@@ -11,7 +11,7 @@
         }
     },
     "installer": {
-        "script": "python.exe -m pip install --upgrade pip ; pip3 install determined"
+        "script": "python.exe -m pip install --upgrade pip ; pip3 uninstall psutil cffi -y ; pip3 install --upgrade cffi psutil ; pip3 install determined"
     },
     "bin": "determined.exe",
     "uninstaller": {
