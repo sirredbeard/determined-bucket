@@ -38,14 +38,6 @@ To use the Determined CLI:
 det --help
 ```
 
-## Note
-
-The Determined CLI is [not eligible for inclusion](https://github.com/ScoopInstaller/Main/pull/3858) in Scoop Main or Extras buckets because it relies on pip for updates.
-
-## determined.exe shim
-
-This manifest first installs the official Python package as a dependency, then installs the Determined CLI via pip. However, Scoop expects to download *something*, not just run a script. So `dethelper.nim` is compiled to `determined.exe` as a binary for Scoop to download. It is published as a release here in this repository. It is a simple shim and any command line arguments passed to `determined` will be passed through to `det`.
-
 ## Help
 
 Join the [Determined AI Commmunity Slack](https://join.slack.com/t/determined-community/shared_invite/zt-1f4hj60z5-JMHb~wSr2xksLZVBN61g_Q).
